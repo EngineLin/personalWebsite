@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Engine Lin's Personal Website
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="all.css")
+    body
+        #navbar
+            a.logo(href="#")
+                h1 Engine Lin's personal website
+            ul
+                li(href="#aboutMe") About
+                    a(href="#aboutMe")
+                li(href="#skill") Skill
+                    a(href="#skill")
+                li(href="#Works") Works
+                    a(href="#Works")
+                li(href="#contact") Contact
+                    a(href="#contact")
+        #header
+            #title
+                p
+                    | Hello, I'm Engine Lin.
+                    br
+                    | How was your day?
+                #flashBox
+            .iconDown
+        #wrap
+            #aboutMe
+                h2.smallTitle About Me
+                img.aboutMePic(src="images/if_TEA_1188706.svg", alt="", srcset="" )
+                ul.aboutMeContent
+                    li 對快速學習有自信。隨時抱持求知的渴望，平時就有大量閱讀的習慣。偶然接觸網頁程式語言，就對這個技術快速變遷的領域感到喜愛。
+                    li 自學 Python 一個月，後來學習網頁程式語言約莫兩個半月。
+                    li 勇於挑戰、面對未知且心態開放。 2016 年 6 月出發環遊世界半年，不害怕與外國人聊天。
+                    li 想法、點子多，不斷嘗試新方式。網頁程式是能讓我好好發揮的地方。
+            #skill
+                h2.smallTitle.smallTitleOfSkill Skill
+                .skillAside
+                    img.skillAsidePic(src="images/if_developer-api-coding-screen_532707.svg", alt="")
+                    p
+                        | 能夠從零開始：
+                        br
+                        | HTML 、 CSS 建立頁面，
+                        br
+                        | JavaScript 、 jQuery 製作使用者行為反應的動畫， Gulp 管理版本，
+                        br
+                        | Gulp 前端自動化
+                        br
+                        | 以及瞭解基礎後端運作機制。
+                .skill01.pushTop
+                    img.skillIcon01.skillIconSize(src="images/if_5351_-_CSS3_1314294.svg", alt="")
+                    h3 HTML/CSS/RWD/Sass
+                    .runbox
+                        div(data-progress='90') 90%
+                .skill02
+                    img.skillIcon02.skillIconSize(src="images/if_code-programming-javascript-software-develop-command-language_652581.svg", alt="")
+                    h3 JavsScript/jQuery/Vue.js
+                    .runbox
+                        div(data-progress='85') 85%
+                .skill03
+                    img.skillIcon03.skillIconSize.svg(src="images/if_github_rounded_394187.svg", alt="")
+                    h3 Git/GitHub
+                    .runbox
+                        div(data-progress='70') 70%
+                .skill04
+                    img.skillIcon04.skillIconSize(src="images/gulp.png", alt="")
+                    h3 Gulp
+                    .runbox
+                        div(data-progress='75') 75%
+                .skill05
+                    img.skillIcon05.skillIconSize.svg(src="images/if_Python_logo_282803.svg", alt="")
+                    h3 Python
+                    .runbox
+                        div(data-progress='60') 60%
+                .clearFix
+            #Works
+                h2.smallTitle Works
+                ul.worksBox
+                    a(href="https://enginelin.github.io/KaohSiungAttractions/")
+                        li
+                            img(src="images/production01.jpg", alt="")
+                            .blackScreen
+                                p.production01 高雄景點網
+                    a(href="http://linengine.comeze.com/myTravelPicsWall/index.html")
+                        li
+                            img(src="images/production02.jpg", alt="")
+                            .blackScreen
+                                p.production02 搭便車環島照片牆                       
+                    a(href="#")
+                        li
+                            img(src="images/production03.jpg", alt="")
+                            .blackScreen
+                                p.production03 響應式餐廳網站
+                    .clearFix
+                ul.worksTextBox
+                    li
+                        .pointer
+                        .pointerCover
+                        h3 看點：
+                        p(class="fa fa-check-circle-o" aria-hidden="true") 以Vue.js框架編程
+                        br
+                        p(class="fa fa-check-circle-o" aria-hidden="true") 利用 AJAX 介接　Open Data 的 JSON 類別資料
+                        br
+                        p(class="fa fa-check-circle-o" aria-hidden="true") Google maps API 串接、定位、標記
+                    li
+                        .pointer
+                        .pointerCover
+                        h3 看點：
+                        p(class="fa fa-check-circle-o" aria-hidden="true") Masonry (瀑布流)插件製作自動向上對推擠的版型
+                        br
+                        p(class="fa fa-check-circle-o" aria-hidden="true") light Box 插件製作照片點擊後的燈箱效果
+                        br
+                        p(class="fa fa-check-circle-o" aria-hidden="true") Nivo Slider 插件製作自動轉換的照片面板
+                    li
+                        .pointer
+                        .pointerCover
+                        h3 看點：
+                        p(class="fa fa-check-circle-o" aria-hidden="true") 利用 CSS 手刻響應式網頁
+                        br
+                        p(class="fa fa-check-circle-o" aria-hidden="true") 自動適應手機、平板與桌機下，不同規格的螢幕大小
+                        br
+                        p(class="fa fa-check-circle-o" aria-hidden="true") 利用 960 Grid 的概念切割版型
+                    .clearFix                    
+            #contact
+                h2.smallTitle.smallTitleOfContact Contact
+                img(src="images/15380287_1439056532778737_2920940929930005985_n.png", alt="")
+                .contactInfo
+                    h3.myName 林尹麒 (Engine Lin)
+                    h3 E-mail : linengine@gmail.com
+                    h3 Phone : +886 928 513 196
+                    ul
+                        a(href="https://www.facebook.com/linengine" title="Facebook" target="_blank")
+                            li(class="fa fa-facebook-square" aria-hidden="true")
+                        a(href="https://github.com/EngineLin" title="GitHub" target="_blank")
+                            li(class="fa fa-github" aria-hidden="true")
+        #footer
+            h3 Copyright © Engine Lin All rights reserved
+
+
+        script(src="vendors.js")
+        script(src="all.js")
