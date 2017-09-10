@@ -2,13 +2,28 @@
 
 var headerHeight = window.innerHeight;
 var getFlashBox = document.getElementById('flashbox');
+var coverPicWidth = window.innerWidth;
 var runSkill = false;
 var runAboutMe = false;
+console.log(coverPicWidth);
 
 $(document).ready(function () {
 
     // 擷取使用者初始畫面高度
     $('#header').css('height', headerHeight);
+    if (coverPicWidth < 1450) {
+        $('#header').css('background-size', '1300px 800px');
+    } else {
+        $('#header').css('background-size', 'cover');
+    };
+
+    //擷取title文字寬度
+    // $(window).
+    var titleWidth = $('#title p').width();
+    coverPicWidth = window.innerWidth;
+    var titleLeftPos = coverPicWidth / 2 - titleWidth / 2 - 10;
+    $('#title').css('left', titleLeftPos);
+    $('#title').css('top', headerHeight / 4);
 
     // 設計閃動的輸入符號
     function flashBox() {
@@ -58,7 +73,7 @@ $(document).ready(function () {
 
         // header視差設計
         $('#header').css('background-position-y', scrollPos / 2 + 'px');
-        $('#title').css('top', scrollPos / 2 + 200 + 'px');
+        $('#title').css('top', scrollPos / 2 + headerHeight / 4 + 'px');
         if (scrollPos >= headerHeight) {
             $('#title p').hide();
             $('#flashBox').hide();
