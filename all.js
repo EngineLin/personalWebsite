@@ -12,7 +12,7 @@ $(document).ready(function () {
     // 擷取使用者初始畫面高度
     $('#header').css('height', headerHeight);
     if (coverPicWidth < 1450) {
-        $('#header').css('background-size', '1300px 800px');
+        $('#header').css('background-size', '1450px 800px');
     } else {
         $('#header').css('background-size', 'cover');
     };
